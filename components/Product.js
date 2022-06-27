@@ -31,10 +31,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 22,
     fontWeight: "bold",
+    color: "black",
   },
   price: {
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 8,
+    color: "black",
   },
 });

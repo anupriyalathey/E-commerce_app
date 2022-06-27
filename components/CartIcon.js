@@ -21,8 +21,8 @@ export function CartIcon({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 8,
-    backgroundColor: "orange",
-    height: 39,
+    backgroundColor: "#5D369D",
+    height: 40,
     padding: 12,
     borderRadius: 32,
     alignItems: "center",
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   text: {
     color: "white",
     fontWeight: "bold",
-    fontSize: 13,
+    fontSize: 12,
   },
 });

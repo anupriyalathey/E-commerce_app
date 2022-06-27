@@ -10,10 +10,10 @@ const PRODUCTS = [
   {
     id: 2,
     name: "PNY GeForce GTX 1060 6GB",
-    price: 79,
+    price: 790,
     image: require("../assets/product_images/graphics.jpeg"),
     description:
-      "6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel Cinematic mode adds shallow depth of field and shifts focus automatically in your videos",
+      "Nvidia Turing architecture, with 1470MHz Core Clock and 1650MHz Boost Clock speeds to help meet the needs of demanding games.",
   },
   {
     id: 3,

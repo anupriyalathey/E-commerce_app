@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, ScrollView } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { ProductsList } from "./screens/ProductsList.js";
@@ -7,6 +7,7 @@ import { ProductDetails } from "./screens/ProductDetails.js";
 import { Cart } from "./screens/Cart.js";
 import { CartProvider } from "./CartContext.js";
 import { CartIcon } from "./components/CartIcon.js";
+import { SafeAreaView } from "react-native-web";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,7 +20,8 @@ function App() {
             name="Products"
             component={ProductsList}
             options={({ navigation }) => ({
-              title: "Products",
+              title: "PRODUCTS",
+
               headerRight: () => <CartIcon navigation={navigation} />,
             })}
           />
@@ -41,6 +43,10 @@ function App() {
           />
         </Stack.Navigator>
       </NavigationContainer>
+      <View style={styles.headerFooterStyle}>
+        <Text style={styles.textStyle}>Built by Anupriya Lathey</Text>
+        <Text style={styles.textStyle}>(102103373)</Text>
+      </View>
     </CartProvider>
   );
 }
@@ -54,6 +60,19 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 30,
+    fontWeight: "bold",
+  },
+  headerFooterStyle: {
+    width: "100%",
+    height: 60,
+    backgroundColor: "#5D369D",
+  },
+
+  textStyle: {
+    textAlign: "center",
+    color: "#fff",
+    fontSize: 16,
+    padding: 2.5,
     fontWeight: "bold",
   },
 });

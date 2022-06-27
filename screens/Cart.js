@@ -16,6 +16,19 @@ export function Cart({ navigation }) {
         <Text style={styles.mainTotal}>$ {total}</Text>
       </View>
     );
+    function Buy() {
+      return (
+        <SafeAreaView>
+          <View style={style.buyBtn}>
+            <Text
+              style={{ color: COLORS.white, fontSize: 18, fontWeight: "bold" }}
+            >
+              Buy
+            </Text>
+          </View>
+        </SafeAreaView>
+      );
+    }
   }
 
   function renderItem({ item }) {
@@ -57,7 +70,7 @@ const styles = StyleSheet.create({
   },
   cartLineTotal: {
     flexDirection: "row",
-    borderTopColor: "#dddddd",
+    borderTopColor: "#5D369D",
     borderTopWidth: 1,
   },
   productTotal: {
